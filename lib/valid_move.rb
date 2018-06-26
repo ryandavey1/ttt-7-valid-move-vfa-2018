@@ -1,6 +1,9 @@
 # code your #valid_move? method here
 def valid_move?(index)
-  return index.between?(-1,9)
+  if index >= 0 && index <= 8
+    return true
+  else 
+    return false
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
